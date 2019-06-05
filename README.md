@@ -1,8 +1,10 @@
 # pghpython website
 
+
 ## Stack
 
 This site is built using [Pelican](https://docs.getpelican.com/en/stable/), a static site generation framework.
+
 
 ## Developing
 
