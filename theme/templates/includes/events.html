@@ -1,0 +1,19 @@
+<html>
+    <head>
+      <title>Events</title>
+    </head>
+    <body>
+    
+        <h2>Upcoming Events</h2>
+
+        {% if meetup_events %}
+        <ul>
+          {% for meetup_event in meetup_events['results'] %}
+            <li>{{ meetup_event.name }}</li>    
+          {% endfor %}
+        </ul>
+        {% else %}
+        No Meetup Info
+        {% endif %}
+    </body>
+</html>

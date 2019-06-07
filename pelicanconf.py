@@ -34,3 +34,12 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+# Theme additions
+DIRECT_TEMPLATES = ['index']
+
+THEME = 'theme'
+
+PLUGINS = [
+    'meetup_events'
+]
