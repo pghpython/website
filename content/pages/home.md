@@ -3,6 +3,6 @@ Date: 2019-06-04 18:44
 
 # pghpython
 
-Welcome to pghpython!
+Welcome to PyPGH! We are a Python User Group in the Pittsburgh Metro Area.
 
-This is a a test!
+We are currently under construction, come back soon!
