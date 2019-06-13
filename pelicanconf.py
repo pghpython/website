@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'pghpython'
-SITENAME = 'pghpython'
+AUTHOR = 'PyPGH'
+SITENAME = 'PyPGH'
 SITEURL = ''
 
 PATH = 'content'
@@ -20,11 +20,11 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
+LINKS = (('Python on Reddit', 'https://www.reddit.com/r/Python/'),
          ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('Google', 'http://www.google.com/'),
-         ('You can modify those links in your config file', '#'),)
+         ('Python Pittsburgh MeetUp', 'https://www.meetup.com/Python-Pittsburgh/'),
+         #('Google', 'http://www.google.com/'),
+         #('You can modify those links in your config file', '#'),)
 
 # Social widget
 SOCIAL = (('You can add links in your config file', '#'),
