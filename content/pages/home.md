@@ -1,7 +1,7 @@
 Title: Construction of PyPGH
 Slug: under-construction
-save_as: index.html
-status: hidden
+Status: hidden
+Save_as: index.html
 
 Hello visitors, this is the website of the Pittsburgh Python User Group.
 Our site is currently under construction, but keep stopping by.
