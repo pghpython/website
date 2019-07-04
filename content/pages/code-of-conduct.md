@@ -1,17 +1,20 @@
 Title: Code of Conduct
 Date: 2019-06-11 23:36
 
-#PYPGH Code of Conduct
+# PyPGH Code of Conduct
 
-##Code of Conduct
-PYPGH is a community of learners, developers, and anyone interested in Python Programming. PYPGH is dedicated to learning, networking, and collaborating within the Pittsburgh metro area.
+## Code of Conduct
+
+PyPGH is a community of learners, developers, and anyone interested in Python Programming. PyPGH is dedicated to learning, networking, and collaborating within the Pittsburgh metro area.
 
 We encourage our members to participate and be active members of our community. We want all of our member's experiences to be fun and safe while also being able to learn and contribute.
 
 All visitors and members are expected to adhere to the following **Code of Conduct**.
 
-###Our Standards
-PYPGH wants to provide for it's members a community that is committed to participation, learning, and collaboration within a safe environment for all, regardless of:
+
+### Our Standards
+
+PyPGH wants to provide for it's members a community that is committed to participation, learning, and collaboration within a safe environment for all, regardless of:
 
 - Age
 - Gender identity & Expression
@@ -57,22 +60,31 @@ If a member engages in behavior that violates this code of conduct, the communit
 - Expulsion from the community environment
 - Expulsion from the community itself
 
-###Weapons Policy
+
+### Weapons Policy
+
 No weapons are allowed within the community environment, including but not limited to explosives (including fireworks), guns, and large knives such as those used for hunting or display, as well as any other item used for the purpose of causing injury or harm to others. Anyone seen in possession of one of these items will be asked to leave immediately, and will only be allowed to return without the weapon.
 
 Members are further expected to comply with all state and local laws on this matter.
 
-###Scope
-All community members are subject to the **Code of Conduct**. This includes community organizers, members, and visitors. Guest presenters are also subject to this code of conduct. 
 
-###Contact Information
+### Scope
+
+All community members are subject to the **Code of Conduct**. This includes community organizers, members, and visitors. Guest presenters are also subject to this code of conduct.
+
+
+### Contact Information
+
 If you believe someone is violating the code of conduct within the community environment or have other concerns, please contact a community organizer/moderator immediately.
 
-####PYPGH Incident Report Contact
+
+#### PyPGH Incident Report Contact
+
 Email: report_pypgh@pypgh.com
 
-####PYPGH General Contact
+
+#### PyPGH General Contact
+
 Email: contact_pypgh@pypgh.com
 
-Community members will be happy to help other members and visitors contact local law enforcement, provide escort, or otherwise assist another member to feel safe. 
-
+Community members will be happy to help other members and visitors contact local law enforcement, provide escort, or otherwise assist another member to feel safe.

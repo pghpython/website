@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'PyPGH'
 SITENAME = 'PyPGH'
-SITEURL = ''
+SITEURL = 'https://pypgh.netlify.com'
 
 PATH = 'content'
 
@@ -20,15 +20,14 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Python on Reddit', 'https://www.reddit.com/r/Python/'),
-         ('Python.org', 'http://python.org/'),
-         ('Python Pittsburgh MeetUp', 'https://www.meetup.com/Python-Pittsburgh/'),
-         #('Google', 'http://www.google.com/'),
-         #('You can modify those links in your config file', '#'),)
+LINKS = (
+    ('Python on Reddit', 'https://www.reddit.com/r/Python/'),
+    ('Python.org', 'http://python.org/'),
+    ('Pittsburgh Python Developers', 'https://www.meetup.com/Python-Pittsburgh/'),
+)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = ()
 
 DEFAULT_PAGINATION = 10
 
