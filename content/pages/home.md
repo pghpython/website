@@ -1,9 +1,12 @@
-Title: pghpython
-Date: 2019-06-04 18:44
+Title: Construction of PyPGH
+Slug: under-construction
+save_as: index.html
+status: hidden
 
-# PyPGH
+Hello visitors, this is the website of the Pittsburgh Python User Group.
+Our site is currently under construction, but keep stopping by.
+We should be up and running in no time.
 
-Welcome to PyPGH!
-We are a Python user group in the Pittsburgh metro area.
+We will ensure in the future to provide some information about the group if you'd like to get involved.
 
-We are currently under construction; come back soon!
+Thanks for being patient, we are working hard on the site!

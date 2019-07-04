@@ -1,5 +1,5 @@
 Title: PyCon 2020
-Date: 2019-06-11 23:56
+Slug: pycon-2020
 
 PyCon 2020
 
