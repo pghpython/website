@@ -45,7 +45,8 @@ This site is built using [Pelican](https://docs.getpelican.com/en/stable/), a st
     (.venv) $ make html
     (.venv) $ make serve
     ```
-    
-    ## Deploy
-    
-    Deploying `master` on Netlify, you can find it here: https://pypgh.netlify.com/
+
+## Deployment
+
+The `master` branch is automatically built and deployed on Netlify.
+Here's [the live site](https://pypgh.netlify.com/).
