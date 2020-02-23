@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+        <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />
+        {% block extra_head %}{% endblock extra_head %}
+    </head>
+
+    <body>
+        <nav class="nav">
+            <a class="nav__home" href="/">pyPGH</a>
+            <ul class="nav__list">
+                {% for pg in pages %}
+                <li class="nav__list-item">
+                    <a class="nav__link" href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+
+        {% block content %}{% endblock %}
+
+        <footer>
+            <a href="https://www.python.org/psf/conduct/">Code of conduct</a>
+        </footer>
+    </body>
+</html>

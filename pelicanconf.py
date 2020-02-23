@@ -6,6 +6,8 @@ AUTHOR = 'PyPGH'
 SITENAME = 'PyPGH'
 SITEURL = 'https://pypgh.netlify.com'
 
+THEME = 'themes/pypgh'
+
 PATH = 'content'
 
 TIMEZONE = 'America/New_York'
@@ -33,3 +35,6 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
+
+PAGE_URL = '{slug}.html'
+PAGE_SAVE_AS = '{slug}.html'
