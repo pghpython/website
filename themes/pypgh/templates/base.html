@@ -22,12 +22,12 @@
             </div>
         </div>
         <nav class="nav">
-            <a href="#" class="menu">
+            <a class="menu">
                 <div class="background"></div>
                 <span class="text">MENU</span>
                 <triangle></triangle>
             </a>
-            <a href="#" class="logo">
+            <a href="{{ SITEURL }}" class="logo">
                 <triangle class="start"></triangle>
                 <div class="background"></div>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48"
@@ -48,8 +48,33 @@
 
         {% block content %}{% endblock %}
 
-        <footer>
-            <a href="https://www.python.org/psf/conduct/">Code of conduct</a>
+        <footer class="footer">
+            <div class="cont">
+                <div class="b footer-child">
+                    <h6>OUR STUFF</h6>
+                    <p><a href="#"> us</a></p>
+                    <p><a href="#"> jobs</a></p>
+                    <p><a href="#"> news</a></p>
+                </div>
+                <div class="c footer-child">
+                    <h6>LINKS</h6>
+                    <p><a href="#">  meetup</a></p>
+                    <p><a href="#">  github</a></p>
+                </div>
+                <div class="p footer-child">
+                    <h6>PYTHON</h6>
+                    <p><a href="https://www.python.org/psf/conduct/" target="_blank" rel="noopener noreferrer">code of conduct</a></p>
+                    <p><a href="#">  big link</a></p>
+                    <p><a href="#">  big link</a></p>
+                </div>
+                <div class="l footer-child">
+                    <h6>LICENSE</h6>
+                    <p>all rights reserved</p>
+                    <p>copyright &copy;	2020</p>
+                    <p>Pittsburgh Python User Group</p>
+                    <p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+                </div>
+            </div>
         </footer>
 
         <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/{{ JS_FILE }}"></script>

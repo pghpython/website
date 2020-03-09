@@ -20,6 +20,11 @@ $background: $white;
     overflow: hidden;
 }
 
+
+/*
+  Some generic site things
+*/
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 h1, h2, h3, h4, h5, p { font-family: $serif; }
 h6 { font-family: $sans; text-transform: uppercase; }
@@ -28,7 +33,11 @@ p { font-size: 18px; }
 .medium-container { max-width: 90%; width: 980px;  margin: 0 auto; }
 .narrow-container { max-width: 80%; width: 720px;  margin: 0 auto; }
 section { position: relative; }
-// buttons! yay.
+
+
+/* 
+  This is a button format
+*/
 button {
     position: absolute;
     height: 60px;
@@ -71,25 +80,31 @@ button {
         svg .top-snake { fill: $white; }
     }
 }
-//for diagonal borders on hovers
-triangle {
-    position: relative;
-    height: 0;
-    width: 0;
-    border-style: solid;
-    border-width: 0 0 60px 30px;
-    border-color: transparent transparent $background transparent;
-}
-triangle.start {
-    position: relative;
-    z-index: 1;
-    height: 0;
-    width: 0;
-    border-style: solid;
-    border-width: 60px 30px 0 0;
-    border-color: $background transparent transparent transparent;
-}
-// nav
+
+
+// //for diagonal borders on hovers
+// triangle {
+//     position: relative;
+//     height: 0;
+//     width: 0;
+//     border-style: solid;
+//     border-width: 0 0 60px 30px;
+//     border-color: transparent transparent $background transparent;
+// }
+// triangle.start {
+//     position: relative;
+//     z-index: 1;
+//     height: 0;
+//     width: 0;
+//     border-style: solid;
+//     border-width: 60px 30px 0 0;
+//     border-color: $background transparent transparent transparent;
+// }
+
+
+/*
+  Navigation and Menu
+*/
 .nav {
     position: fixed;
     background: $white;
@@ -102,9 +117,13 @@ triangle.start {
     a { text-decoration: none; }
     .menu {
         position: absolute;
+        cursor: pointer;
         display: flex;
         top: 50%; left: 0;
         padding-left: 30px;
+        padding-right: 30px;
+        height: 60px;
+        clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
         transform: translateY(-50%);
         align-items: center;
         font-family: $sans;
@@ -136,6 +155,9 @@ triangle.start {
     .logo {
         position: absolute;
         left: 50%; top: 50%;
+        height: 60px;
+        padding: 0 30px;
+        clip-path: polygon(20% 0, 100% 0, 80% 100%, 0% 100%);
         transform: translate(-50%, -50%);
         display: flex;
         justify-content: center;
@@ -208,7 +230,9 @@ triangle.start {
         position: absolute;
         z-index: 99;
         height: 40px; width: 40px;
-        top: 20px; left: 20px;
+        padding: 10px 30px;
+        top: 10px; left: 40px;
+        cursor: pointer;
         span {
             width: 4px;
             height: 100%;
@@ -220,26 +244,239 @@ triangle.start {
         }
     }
 }
+
+
+
 // main hero
 .hero {
-    min-height: 80vh;
-    .title-container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        flex-direction: column;
+	min-height: 90vh;
+	background: url(https://www.monjibram.com/assets/images/snake.jpg)
+		600px center / cover
+		no-repeat;
+	.title-container {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		flex-direction: column;
+	}
+	h1 {
+		font-size: 52px; width: 100%;
+	}
+	h6 {
+		padding-top: 5px;
+		font-size: 22px;
+	}
+}
+
+// meetup section
+.meetup {
+	background-color: $black;
+	color: $white;
+	min-height: 60vh;
+	padding-top: 120px;
+	padding-bottom: 100px;
+	.flex-group {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-end;
+	}
+	.scheduler {
+        max-width: 700px;
+        min-width: 500px;
+		margin-left: 100px;
+        margin-right: 0;
+        flex: 1;
+	}
+	h2 {
+		font-size: 38px;
+		font-family: $sans;
+		font-weight: 200;
+		letter-spacing: .2px;
+		text-align: left;
+	}
+	.meetup-icon {
+		fill: $white;
+		height: 55px;
+		margin-bottom: -18px;
+	}
+	.content {
+		margin-left: auto;
+		margin-top: 20px;
+		width: 100%;
+	}
+	.blurb {
+		font-size: 24px; 
+		letter-spacing: 1.5px;
+        margin-top: 25px;
+        margin-right: 5%;
+	}
+	.deets {
+		width: 100%;
+		padding: 20px;
+		margin-top: 40px;
+		border-radius: 15px 0 0 15px;
+		background-color: $yellow;
+		color: $black;
+		p {
+			font-family: $mono;
+			font-size: 21px;
+			// font-weight: 700;
+			padding-bottom: 5px;
+		}
+	}
+	.dat-calendar-space {
+        width: 550px;
+        min-width: 400px;
+        margin-left: -100px;
+		margin-right: 50px;
+	}
+	.calendar {
+		fill: $white;
+		width: 100%;
+		.inside { fill: $yellow; }
+	}
+}
+
+// what you want to do here is click on some of this cool stuff we offer
+.where-to {
+	min-height: 80vh;
+	.flex-group {
+		padding-top: 120px;
+		padding-bottom: 100px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	a {
+		color: inherit;
+		display: flex;
+		flex-wrap: wrap;
+		text-decoration: none;
+		width: 32%;
+		position: relative;
+		padding-bottom: 100px;
+	}
+	.inner-container {
+		max-width: 90%;
+		margin: 0 auto;
+		position: relative;
+	}
+	.where-to-icon {
+		width: 60%;
+		height: auto;
+		margin: 0 15% 20px;
+		fill: $black;
+	}
+	.inside-flex {
+		display: flex;
+		flex-wrap: wrap;
+		align-content: flex-start;
+		justify-content: space-between;
+	}
+	.jobs .where-to-icon {	fill: $light-blue; }
+	.jobs .background { background-color: $light-blue; }
+	.jobs button { border-bottom-color: $light-blue; }
+	.resources .where-to-icon { fill: $light-yellow; }
+	.resources .background { background-color: $light-yellow }
+	.resources button { border-bottom-color: $light-yellow; }
+	.who-me .where-to-icon { fill: $light-green; }
+	.who-me .background { background-color: $light-green }
+	.who-me button { border-bottom-color: $light-green; }
+}
+
+// hey, oh yeah, that thing
+.pycon-block {
+	min-height: 60vh;
+	background-color: $yellow;
+	h2, p { color: $black; }
+	h2 { font-family: $sans; text-transform: uppercase; }
+	.narrow-container {
+		padding-top: 120px;
+		padding-bottom: 100px;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: center;
+		.image-left {
+			width: 400px;
+			img { width: 100%; height: auto; }
+		}
+		.text-right { width: calc(100% - 480px); }
+	}
+}
+
+// footer copied from Benji's site
+.footer {
+	background-color: $black;
+  z-index: 2;
+  margin: 0 auto;
+	border-top: solid 4px $white;
+  padding: 30px 0 50px;
+  // padding: 30px 30px 50px 30px;
+  position: relative;
+  text-align: left;
+  .cont {
+    height: 100%;
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "b c p l" "b c p l" "b c p l" "b c p l";
+  }
+  .b { grid-area: b; }
+  .p { grid-area: p; }
+  .c { grid-area: c; }
+  .l { grid-area: l; }
+  h6 {
+    color: $white;
+    font-size: 18px;
+    width: 123px;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    width: 133px;
+  }
+  .block {
+    display: flex;
+    // flex-wrap: nowrap;
+    min-width: 200px;
+  }
+  .footer-child {
+    // flex-grow: 1;
+    // padding-left: 5%;
+    padding: 0 10%;
+    height: 100%;
+    min-width: 100px;
+    border-right: solid 2px $yellow;
+    &:last-of-type {
+      border-right: none;
     }
-    h1, h6, code, pre { text-align: center; }
-    code {
-        border: none;
-        font-family: $mono;
-        font-weight: 700;
-        // color: $black;
-        font-size: 42px;
-        width: 100%;
-        margin-bottom: 15px;
+    p {
+			color: $white;
     }
-    h6 { font-size: 22px; padding-bottom: 50px; }
+    a:link, a:visited {
+      color: $white; text-decoration: none;
+			&:hover { color: $yellow; }
+    }
+  }
+  .footer-vert {
+    width: 2px;
+    margin: -1px;
+    height: 100%;
+    background-color: $yellow;
+  }
+
 }
