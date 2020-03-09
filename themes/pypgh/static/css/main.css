@@ -1,4 +1,10 @@
+@import url("https://use.typekit.net/mmh2myd.css");
+
 :root {
+    --font-stack-serif: 'freight-text-pro', serif;
+    --font-stack-sans: 'vista-sans', sans-serif;
+    --font-stack-mono: 't26-carbon', monospace;
+
     --space-xxxs: 0.25em;
     --space-xxs:  0.375em;
     --space-xs:   0.5em;
@@ -9,9 +15,9 @@
     --space-xxl:  5.25em;
     --space-xxxl: 8.5em;
 
-    --black: #000000;
-    --white: #ffffff;
-    --yellow: #f8d835;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-yellow: #f8d835;
 }
 
 * {
@@ -22,37 +28,63 @@
 
 .nav {
     display: flex;
-    padding: var(--space-lg);
-    background: var(--black);
+    align-items: center;
+    padding: var(--space-md);
 }
 
 .nav__home {
-    justify-self: flex-start;
     flex-grow: 1;
-    color: var(--yellow);
-    text-decoration: none;
 }
 
-.nav__home:hover {
-    color: var(--white);
+.nav__home-link {
+    text-decoration: none;
+    font-family: var(--font-stack-mono);
+    color: var(--color-black);
+    padding: var(--space-md);
+
+    display: flex;
+    align-items: center;
+}
+
+.nav__home-link:hover {
+    color: var(--color-yellow);
+    background: var(--color-black);
+}
+
+.nav__home-link:hover .logo__top-snake {
+    fill: var(--color-white);
 }
 
 .nav__list {
-    justify-self: flex-end;
+    display: flex;
     list-style: none;
 }
 
 .nav__list-item {
-    display: inline-block;
+    display: flex;
 }
 
 .nav__link {
-    color: var(--white);
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: var(--font-stack-sans);
+    color: var(--color-black);
+    padding: var(--space-md);
 }
 
 .nav__link--active,
 .nav__link:hover {
-    color: var(--yellow);
+    color: var(--color-yellow);
+    background: var(--color-black);
+}
+
+.logo {
+    height: 2rem;
+}
+
+.logo__top-snake {
+    fill: var(--color-black);
+}
+
+.logo__bottom-snake {
+    fill: var(--color-yellow);
 }
