@@ -56,3 +56,214 @@
 .nav__link:hover {
     color: var(--yellow);
 }
+
+
+
+.nav {
+  position: fixed;
+  background: #fff;
+  z-index: 97;
+  height: 60px;
+  width: 100%;
+  font-size: 20px;
+  background: #fff;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav .menu {
+  position: absolute;
+  display: -webkit-box;
+  display: flex;
+  top: 50%;
+  left: 0;
+  padding-left: 30px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-box-align: center;
+          align-items: center;
+  font-family: vista-sans, sans-serif;
+  font-weight: bold;
+  color: #000;
+}
+
+.nav .menu .background {
+  background-color: #000;
+  position: absolute;
+  max-width: 0;
+  width: 99%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
+}
+.nav .menu .text {
+  position: relative;
+  z-index: 1;
+}
+.nav .menu:hover {
+  color: #FFC107;
+}
+.nav .menu:hover .background {
+  max-width: 180px;
+  opacity: 1;
+  -webkit-transition: ease all .2s;
+  transition: ease all .2s;
+}
+.nav .logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  font-family: t26-carbon, monospace;
+  color: #000;
+}
+.nav .logo svg {
+  position: relative;
+  height: 30px;
+}
+.nav .logo svg .top-snake {
+  fill: #000;
+}
+.nav .logo svg .bottom-snake {
+  fill: #FFC107;
+}
+.nav .logo .text {
+  position: relative;
+  z-index: 1;
+}
+.nav .logo .background {
+  background-color: #000;
+  position: absolute;
+  max-width: 0;
+  width: 99%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 1px;
+  opacity: 0;
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
+}
+.nav .logo:hover {
+  color: #FFC107;
+}
+.nav .logo:hover .background {
+  max-width: 180px;
+  opacity: 1;
+  -webkit-transition: ease all .2s;
+  transition: ease all .2s;
+}
+.nav .logo:hover svg .top-snake {
+  fill: #fff;
+}
+
+.full-screen-menu {
+  height: 100vh;
+  position: absolute;
+  z-index: 98;
+  -webkit-transform: translate(-100%, -100%);
+          transform: translate(-100%, -100%);
+  width: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
+}
+.full-screen-menu.active {
+  -webkit-transform: unset;
+          transform: unset;
+}
+.full-screen-menu .links {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  font-family: t26-carbon, monospace;
+  font-size: 42px;
+  font-weight: 700;
+}
+.full-screen-menu .links .link {
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 30px;
+}
+.full-screen-menu .links .link:hover {
+  color: #FFC107;
+}
+.full-screen-menu .exit {
+  position: absolute;
+  z-index: 99;
+  height: 40px;
+  width: 40px;
+  top: 20px;
+  left: 20px;
+}
+.full-screen-menu .exit span {
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  left: 20px;
+  background-color: #fff;
+}
+.full-screen-menu .exit span:nth-child(1) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.full-screen-menu .exit span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+triangle {
+    position: relative;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 0 0 60px 30px;
+    border-color: transparent transparent $background transparent;
+}
+triangle.start {
+    position: relative;
+    z-index: 1;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 60px 30px 0 0;
+    border-color: $background transparent transparent transparent;
+}
+
+.locked {
+    height: 100vh;
+    overflow: hidden;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+h1, h2, h3, h4, h5, p { font-family: $serif; }
+h6 { font-family: $sans; text-transform: uppercase; }
+p { font-size: 18px; }
+
+.container { max-width: 90%; width: 1280px; margin: 0 auto; }
+.medium-container { max-width: 90%; width: 980px;  margin: 0 auto; }
+.narrow-container { max-width: 80%; width: 720px;  margin: 0 auto; }
+section { position: relative; }

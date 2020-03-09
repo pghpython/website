@@ -38,3 +38,5 @@ RELATIVE_URLS = True
 
 PAGE_URL = '{slug}.html'
 PAGE_SAVE_AS = '{slug}.html'
+
+JS_FILE = 'main.js'
