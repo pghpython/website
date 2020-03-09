@@ -42,7 +42,7 @@ This site is built using [Pelican](https://docs.getpelican.com/en/stable/), a st
     You can also use `make` if you prefer (you can just type `make` to see all the available options):
 
     ```shell
-    (.venv) $ make html
+    (.venv) $ make regenerate
     (.venv) $ make serve
     ```
 
