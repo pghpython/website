@@ -8,6 +8,8 @@ This site is built using [Pelican](https://docs.getpelican.com/en/stable/), a st
 
 ## Developing
 
+The `redesign` branch is our current hub for development changes. Check back soon to see improvements. Contact a contributor to find out how you can help.
+
 1. Clone this repository and change to the newly created directory:
 
     ```shell
@@ -45,6 +47,7 @@ This site is built using [Pelican](https://docs.getpelican.com/en/stable/), a st
     (.venv) $ make regenerate
     (.venv) $ make serve
     ```
+
 
 ## Deployment
 
