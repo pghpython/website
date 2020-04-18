@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+        {% assets filters="libsass", output="css/style.min.css", "css/style.scss" %}
+            <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
+        {% endassets %}
+        {% block extra_head %}{% endblock extra_head %}
+    </head>
+
+    <body>
+        <div class="full-screen-menu">
+            <div class="exit">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="links">
+                {% for pg in pages %}
+                    <a class="link" href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a>
+                {% endfor %}
+            </div>
+        </div>
+        <nav class="nav">
+            <a class="menu">
+                <div class="background"></div>
+                <span class="text">MENU</span>
+                <triangle></triangle>
+            </a>
+            <a href="{{ SITEURL }}" class="logo">
+                <triangle class="start"></triangle>
+                <div class="background"></div>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48"
+                    version="1.1">
+                    <g id="surface1">
+                        <path class="top-snake"
+                            d="M24.047 5c-1.555.004-2.633.14-3.938.367-3.847.668-4.547 2.078-4.547 4.668V14h9v2h-13.69c-2.638 0-4.946 1.242-5.677 4.219-.824 3.418-.863 5.558 0 9.125C5.852 32.004 7.293 34 9.93 34h3.633v-5.105c0-2.965 2.687-5.895 5.765-5.895h7.235c2.523 0 5-1.863 5-4.379v-8.586c0-2.437-1.758-4.262-4.22-4.672.063-.004-1.753-.37-3.296-.363zm-4.985 4c.82 0 1.5.676 1.5 1.504a1.5 1.5 0 0 1-1.5 1.496 1.49 1.49 0 0 1-1.5-1.496c0-.824.665-1.504 1.5-1.504z"
+                            fill="#000" />
+                        <path class="bottom-snake"
+                            d="M23.078 43c1.555-.004 2.633-.14 3.938-.367 3.847-.668 4.547-2.078 4.547-4.668V34h-9v-2h13.695c2.633 0 4.941-1.242 5.672-4.219.828-3.418.863-5.558 0-9.125-.657-2.66-2.098-4.656-4.735-4.656h-3.633v5.105c0 2.965-2.687 5.895-5.765 5.895h-7.235c-2.523 0-5 1.863-5 4.379v8.586c0 2.437 1.758 4.262 4.22 4.672-.063.004 1.753.37 3.296.363zm4.985-4c-.82 0-1.5-.676-1.5-1.504a1.5 1.5 0 0 1 1.5-1.496c.835 0 1.5.664 1.5 1.496 0 .824-.665 1.504-1.5 1.504z"
+                            fill="#FFC107" />
+                    </g>
+                </svg>
+                <span class="text">pypgh</span>
+                <triangle></triangle>
+            </a>
+        </nav>
+
+        {% block content %}{% endblock %}
+
+        <footer class="footer">
+            <div class="cont">
+                <div class="b footer-child">
+                    <h6>OUR STUFF</h6>
+                    <p><a href="#"> us</a></p>
+                    <p><a href="#"> jobs</a></p>
+                    <p><a href="#"> news</a></p>
+                </div>
+                <div class="c footer-child">
+                    <h6>LINKS</h6>
+                    <p><a href="#">  meetup</a></p>
+                    <p><a href="#">  github</a></p>
+                </div>
+                <div class="p footer-child">
+                    <h6>PYTHON</h6>
+                    <p><a href="https://www.python.org/psf/conduct/" target="_blank" rel="noopener noreferrer">code of conduct</a></p>
+                    <p><a href="#">  big link</a></p>
+                    <p><a href="#">  big link</a></p>
+                </div>
+                <div class="l footer-child">
+                    <h6>LICENSE</h6>
+                    <p>all rights reserved</p>
+                    <p>copyright &copy;	2020</p>
+                    <p>Pittsburgh Python User Group</p>
+                    <p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/{{ JS_FILE }}"></script>
+        <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/prism.min.js"></script>
+    </body>
+</html>
